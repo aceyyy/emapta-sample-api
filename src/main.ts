@@ -12,6 +12,7 @@ async function bootstrap() {
     origin: "*",
     methods: "GET,PUT,POST,DELETE",
     allowedHeaders: "Content-Type, Authorization",
+    preflightContinue: false,
   });
 
   await app.listen(port);
